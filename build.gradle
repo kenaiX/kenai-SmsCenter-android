@@ -19,7 +19,15 @@ android {
         versionCode 1
         versionName '1.0.0'
     }
-    productFlavors {
+    lintOptions {
+          abortOnError false
+    }
+}
+
+allprojects {
+    repositories {
+        maven{ url "http://dl.bintray.com/kenaix/maven"}
+        jcenter()
     }
 }
 
